@@ -1,3 +1,11 @@
+
+/* reset do CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-image: url('https://28546.cdn.simplo7.net/static/28546/sku/feltros-feltro-santa-fe-liso-azul-babe-28093--p-1548604992201.jpg');
     background-size: auto 100vh;
@@ -5,9 +13,31 @@ body {
     height: 100vh;
     
     }
+
+    /* se a tela tiver pelo menos 400px vai carregar estes estilos */
+    /* Metodo site responsivo*/
+@media (min-width: 400px) {
+    body{
+        font-size: 14px;
+    }
+
+
+}
+
+header{
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items:center;
+
+
+}    
   
   .menu{
     background-color:white;
+    position: fixed;
+    width: 100vw;
+    top:0;
   }
   
   .menu li{
@@ -20,10 +50,19 @@ body {
     display: flex;
     justify-content:space-around;
   }
+
+  .menu a{
+      /* para debugar o tamnho da area de click background-color:red; */
+            display:block;
+            padding:10px 20px;
+
+
+  }
   
   a {
     color: teal;
     text-decoration: none;
+
      }
   
   a:hover{
@@ -33,11 +72,21 @@ body {
   .site-title {
     text-align: center;
     color:whitesmoke;
+   
+  }
+
+  .site-title{
+      font-size: 4em;
   }
   
   .site-subtitle
   {
     font-style:italic;
+  }
+
+  .img-portfolio{
+      height: 180px;
+      width:180px;
   }
   
   
